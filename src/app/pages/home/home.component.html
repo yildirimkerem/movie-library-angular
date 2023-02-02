@@ -1,0 +1,39 @@
+
+<ng-container>
+  <app-slider></app-slider>
+</ng-container>
+
+<ul class="menu" style="text-align: center;">
+  <li *ngFor="let categories of categoriesList" >
+    <button style=" margin-bottom: 20px" [routerLink]="['/category-movies/', categories.id]" mat-raised-button color="warn"> {{categories.name}}</button>
+  </li>
+</ul>
+
+
+
+<h1 style="text-align: center">Trending Movies</h1>
+<app-skeleton *ngIf="loader"></app-skeleton>
+<p-carousel [value]="moviesTrendingList" [numVisible]="6" [numScroll]="4" [responsiveOptions]="responsiveOptions"  [circular]="false">
+  <ng-template let-movie pTemplate="item">
+    <div class="listing-item-style" [routerLink]="['/movie-detail/', movie.id]">
+      <img *ngIf="movie?.poster_path" src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/{{movie?.poster_path}}">
+      <img *ngIf="!movie?.poster_path" src="assets/images/default-movie.png">
+      <span> {{ movie?.title}}</span>
+    </div>
+  </ng-template>
+</p-carousel>
+
+
+
+<h1 style="text-align: center"> Trending TV Shows</h1>
+<app-skeleton *ngIf="loader"></app-skeleton>
+<p-carousel [value]="tvOnTheAirList" [numVisible]="6" [numScroll]="4" [circular]="false" *ngIf="!loader"
+            [responsiveOptions]="responsiveOptions">
+
+  <ng-template let-tv pTemplate="item">
+    <div class="listing-item-style" [routerLink]="['/tv-show-detail/', tv.id]">
+      <img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/{{tv?.poster_path}}">
+      <span> {{ tv?.name}}</span>
+    </div>
+  </ng-template>
+</p-carousel>

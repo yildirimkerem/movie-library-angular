@@ -1,0 +1,39 @@
+
+
+<div class="listing" style="margin-bottom: 15px">
+  <h1 style="text-align: center">Movies Categories</h1>
+  <form>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="form-group">
+          <app-skeleton *ngIf="loader"></app-skeleton>
+          <ul class="menu" style="text-align: center;">
+            <li *ngFor="let categories of categoriesList" >
+              <button style=" margin-bottom: 20px" [routerLink]="['/category-movies/', categories.id]" mat-raised-button color="warn"> {{categories.name}}</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+
+<div class="listing" >
+  <h1 style="text-align: center">TV Shows Categories</h1>
+  <form>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="form-group">
+          <app-skeleton *ngIf="loader"></app-skeleton>
+          <ul class="menu" style="text-align: center;">
+            <li *ngFor="let categories of tvCategoriesList" >
+              <button style=" margin-bottom: 20px" [routerLink]="['/tv-categories/', categories.id]" mat-raised-button color="warn"> {{categories.name}}</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
