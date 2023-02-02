@@ -2,7 +2,7 @@
 
 ## [Check it live here] ()
 
-
+![Thumbnail](thumbnail.png)
 
 A Movie Library made with Angular using The Movie Database API
 
