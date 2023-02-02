@@ -1,4 +1,4 @@
-# Movie Library w/ Angular
+# Movie Library Angular
 
 ## [Check it live here] ()
 
