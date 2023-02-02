@@ -54,4 +54,4 @@ Please feel free to send pull request if you want to contribute!
 
 ## Authors
 
-- **Kerem Yıldırım** - _Development_ - [Kerem Yıldırım](https://github.com/yildirimkerem)
+- [Kerem Yıldırım](https://github.com/yildirimkerem)
