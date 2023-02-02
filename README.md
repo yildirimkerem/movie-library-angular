@@ -47,6 +47,7 @@ ng build
 - [SCSS](https://sass-lang.com/)
 - [Prime Angular](https://www.primefaces.org/primeng/)
 - [Material Angular](https://material.angular.io/guide/getting-started)
+- [The Movie Database API](https://www.themoviedb.org/documentation/api)
 
 ## Contributing
 
