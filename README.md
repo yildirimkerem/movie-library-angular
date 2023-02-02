@@ -16,8 +16,11 @@ You need to create an API KEY in [The Movie Database API](https://www.themoviedb
 Create an .env.local file on the root of the project and put your API key
 
 ```
-AppModule.ts => providers
-APIKEY = yourapikeyhere
+app.module.ts
+ providers: [{
+    provide: "APIKEY",
+    useValue: "yourapikey"
+  }]
 ```
 
 ### Installing
