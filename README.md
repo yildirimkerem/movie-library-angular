@@ -1,6 +1,6 @@
 # Movie Library Angular
 
-## [Check it live here] (https://angular-movie-library.netlify.app/)
+## [Check it live here](https://angular-movie-library.netlify.app/)
 
 ![Thumbnail](thumbnail.png)
 
