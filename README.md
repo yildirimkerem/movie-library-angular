@@ -13,7 +13,7 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 
 You need to create an API KEY in [The Movie Database API](https://www.themoviedb.org/documentation/api)
-Create an .env.local file on the root of the project and put your API key
+
 
 ```
 app.module.ts
